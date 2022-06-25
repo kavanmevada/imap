@@ -9,6 +9,11 @@ on: [push, pull_request]
 
 name: Check & Test
 
+env:
+  HOST: imap.domain.org
+  EMAIL: example@domain.org
+  PASS: password
+
 jobs:
   check:
     name: Check
